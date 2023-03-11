@@ -5,7 +5,7 @@
     "author" : "Muffakir Hamid",
     "manifest_version" : 3,
     "background" : {
-        "service_worker" : "background.js"
+        "service_worker" : "content.js"
     },
     "permissions" : [
         "tabs",

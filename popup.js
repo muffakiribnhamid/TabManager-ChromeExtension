@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const tabs = document.getElementById('ext_tabs');
     let allTabs = []
     console.log(allTabs);
-   chrome.runtime.sendMessage({type: "getTabs"}, function(response) {
+    chrome.runtime.sendMessage({type: "getTabs"}, function(response) {
 
     allTabs = response;
 
