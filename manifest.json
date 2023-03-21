@@ -5,13 +5,18 @@
     "author" : "Muffakir Hamid",
     "manifest_version" : 3,
     "background" : {
-        "service_worker" : "content.js"
+        "service_worker" : "background.js"
     },
     "permissions" : [
         "tabs",
-        "favicon"
+        "favicon",
+        "activeTab"
 
     ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
     "content_scripts" : [
         {
             "matches" : [
@@ -33,6 +38,10 @@
     },
     "web_accessible_resources": [
         {
+        "js" : [
+                "content.js",
+                "popup.js"
+            ],
           "resources": ["_favicon/*"],
           "matches": ["<all_urls>"],
           "extension_ids": ["*"]
