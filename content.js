@@ -95,7 +95,7 @@ chrome.runtime.sendMessage({ action: 'getTabsInfo' }, function (response) {
     siteAnchor.addEventListener('click', function (event) {
       event.preventDefault();
       var siteUrl = this.dataset.url;
-      window.open(siteUrl, '_blank');
+      window.open(siteUrl, '_self');
     });
 
     var hr = document.createElement('hr');
