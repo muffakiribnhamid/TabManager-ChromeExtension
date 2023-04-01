@@ -1,0 +1,77 @@
+#white-bar {
+  background-color: '#C9EEFF';
+  width: '60px';
+  height: '100%';
+  position: 'fixed';
+  top: '0';
+  left: '0';
+}
+
+#main-logo {
+  width: '50px';
+  height: '50px';
+  position: 'relative';
+  margin-left: '5px';
+  margin-top: '10px';
+  top: '10';
+  left: '10';
+}
+
+#fav-sites {
+  display: 'flex';
+  flex-direction: 'column';
+  align-items: 'center';
+  justify-content: 'start';
+  margin-top: '30px';
+  width: '100%';
+  height: 'calc(100% - 70px)';
+}
+
+.site-anchor {
+  display: 'flex';
+  flex-direction: 'column';
+  align-items: 'center';
+  margin-bottom: '10px';
+  text-decoration: 'none';
+}
+
+.site-img {
+  width: '30px';
+  height: '30px';
+}
+
+.site-paragraph {
+  font-size: '10px';
+  margin-top: '5px';
+  text-align: 'center';
+}
+
+#add-button {
+  position: 'absolute';
+  bottom: '0';
+  left: '0';
+  margin: '10px';
+  border-radius: '5px';
+  border: 'none';
+  cursor: 'pointer';
+}
+
+#hide-button {
+  position: 'absolute';
+  bottom: '0';
+  right: '0';
+  margin: '10px';
+  border-radius: '5px';
+  border: 'none';
+  cursor: 'pointer';
+}
+
+#show-button {
+  position: 'fixed';
+  bottom: '0';
+  left: '10px';
+  margin: '10px';
+  border-radius: '5px';
+  border: 'none';
+  cursor: 'pointer';
+}
